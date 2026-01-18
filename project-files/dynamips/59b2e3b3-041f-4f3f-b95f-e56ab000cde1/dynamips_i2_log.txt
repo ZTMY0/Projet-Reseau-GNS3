@@ -1,0 +1,48 @@
+Jan 06 19:34:21.752 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 06 19:34:21.752 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63945.
+Jan 06 19:34:22.257 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 06 19:34:22.258 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips 
+Jan 06 19:34:22.258 GENERAL: working_dir=C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips
+Jan 06 19:34:22.259 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips\53cd1906-1e69-40e8-b0d1-c77316193bb7 
+Jan 06 19:34:22.260 GENERAL: working_dir=C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips\53cd1906-1e69-40e8-b0d1-c77316193bb7
+Jan 06 19:34:22.260 HYPERVISOR: exec_cmd: vm create R-ADMIN 1 c7200 
+Jan 06 19:34:22.262 VM: VM R-ADMIN created.
+Jan 06 19:34:22.263 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ADMIN 5025 
+Jan 06 19:34:22.264 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-ADMIN 
+Jan 06 19:34:22.264 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.265 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 0 0 C7200-IO-FE 
+Jan 06 19:34:22.266 HYPERVISOR: exec_cmd: vm set_disk0 R-ADMIN 0 
+Jan 06 19:34:22.267 HYPERVISOR: exec_cmd: vm set_exec_area R-ADMIN 64 
+Jan 06 19:34:22.268 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.268 HYPERVISOR: exec_cmd: vm set_idle_pc R-ADMIN 0x62a89b30 
+Jan 06 19:34:22.270 HYPERVISOR: exec_cmd: vm set_ios R-ADMIN C:/Users/RR/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.S6.image 
+Jan 06 19:34:22.270 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-ADMIN ca01.8558.0000 
+Jan 06 19:34:22.271 HYPERVISOR: exec_cmd: vm set_nvram R-ADMIN 512 
+Jan 06 19:34:22.272 HYPERVISOR: exec_cmd: vm set_ram R-ADMIN 512 
+Jan 06 19:34:22.273 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.273 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 1 0 PA-GE 
+Jan 06 19:34:22.273 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.274 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 2 0 PA-GE 
+Jan 06 19:34:22.275 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.275 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 3 0 PA-GE 
+Jan 06 19:34:22.276 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.276 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 4 0 PA-GE 
+Jan 06 19:34:22.277 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.277 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 5 0 PA-2FE-TX 
+Jan 06 19:34:22.278 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:22.278 HYPERVISOR: exec_cmd: vm slot_add_binding R-ADMIN 6 0 PA-2FE-TX 
+Jan 06 19:34:35.346 HYPERVISOR: exec_cmd: nio create_udp udp-dec335a3-e625-46d7-8b16-9bdf4c279a6d 30004 127.0.0.1 30005 
+Jan 06 19:34:35.630 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ADMIN 1 0 udp-dec335a3-e625-46d7-8b16-9bdf4c279a6d 
+Jan 06 19:34:35.631 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:35.684 HYPERVISOR: exec_cmd: nio create_udp udp-abe51e9b-2c69-4543-a47b-06ef08d702a6 30008 127.0.0.1 30009 
+Jan 06 19:34:35.695 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ADMIN 2 0 udp-abe51e9b-2c69-4543-a47b-06ef08d702a6 
+Jan 06 19:34:35.696 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:36.045 HYPERVISOR: exec_cmd: nio create_udp udp-ec8a3d2a-64ad-4817-bc1f-f3b3c4b492de 30014 127.0.0.1 30015 
+Jan 06 19:34:36.048 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ADMIN 3 0 udp-ec8a3d2a-64ad-4817-bc1f-f3b3c4b492de 
+Jan 06 19:34:36.049 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:36.389 HYPERVISOR: exec_cmd: nio create_udp udp-edc2fa43-c572-498e-a30f-e8e249143755 30020 127.0.0.1 30021 
+Jan 06 19:34:36.391 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ADMIN 4 0 udp-edc2fa43-c572-498e-a30f-e8e249143755 
+Jan 06 19:34:36.392 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 
+Jan 06 19:34:36.781 HYPERVISOR: exec_cmd: nio create_udp udp-efb51241-7890-487f-945b-d6ed85b115c3 30026 127.0.0.1 30027 
+Jan 06 19:34:36.784 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ADMIN 0 0 udp-efb51241-7890-487f-945b-d6ed85b115c3 
+Jan 06 19:34:36.785 HYPERVISOR: exec_cmd: vm get_status R-ADMIN 

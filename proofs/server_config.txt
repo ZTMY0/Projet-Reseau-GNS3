@@ -1,0 +1,47 @@
+=== CONFIGURATION NAMED.CONF (/etc/named.conf) ===
+options {
+    listen-on port 53 { any; };
+    listen-on-v6 port 53 { none; };
+    directory   "/var/named";
+    dump-file   "/var/named/data/cache_dump.db";
+    statistics-file "/var/named/data/named_stats.txt";
+    memstatistics-file "/var/named/data/named_mem_stats.txt";
+    allow-query     { any; };
+    recursion yes;
+    dnssec-enable yes;
+    dnssec-validation yes;
+};
+
+zone "uemf.ma" IN {
+    type master;
+    file "uemf.ma.zone";
+    allow-update { none; };
+};
+
+=== FICHIER DE ZONE (/var/named/uemf.ma.zone) ===
+$TTL 86400
+@   IN  SOA     ns1.uemf.ma. admin.uemf.ma. (
+        2024010802  ; Serial
+        3600        ; Refresh
+        1800        ; Retry
+        604800      ; Expire
+        86400 )     ; Minimum TTL
+
+@       IN  NS      ns1.uemf.ma.
+@       IN  A       192.168.119.135    ; Racine
+ns1     IN  A       192.168.119.135    ; Serveur DNS
+www     IN  A       192.168.119.135    ; Serveur Web
+
+=== FIREWALL (firewall-cmd --list-all) ===
+public (active)
+  target: default
+  interfaces: ens33
+  services: cockpit dhcpv6-client dns http https ssh
+  ports: 
+  protocols: 
+  masquerade: no
+
+=== DÉPLOIEMENT WEB APACHE ===
+Chemin : /var/www/html/src/views/auth/
+Fichiers : index.php, login.php (Application Gestion Soutenances)
+Protocole : HTTPS (Port 443) activé via mod_ssl

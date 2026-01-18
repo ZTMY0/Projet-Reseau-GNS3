@@ -1,0 +1,31 @@
+=== 1. TEST DEPUIS L'HÔTE WINDOWS (PONT RÉSEAU) ===
+PS C:\Users\RR> ping www.uemf.ma
+
+Pinging www.uemf.ma [192.168.119.135] with 32 bytes of data:
+Reply from 192.168.119.135: bytes=32 time<1ms TTL=64
+Reply from 192.168.119.135: bytes=32 time<1ms TTL=64
+Reply from 192.168.119.135: bytes=32 time<1ms TTL=64
+Reply from 192.168.119.135: bytes=32 time<1ms TTL=64
+
+Ping statistics for 192.168.119.135:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+=== 2. TEST DEPUIS CLIENT GNS3 (VPCS) ===
+B1-RDC-ETU-5> show ip
+NAME        : B1-RDC-ETU-5[1]
+IP/MASK     : 10.2.20.2/24
+GATEWAY     : 10.2.20.1
+DNS         : 192.168.119.135
+DHCP SERVER : 10.2.20.1
+
+B1-RDC-ETU-5> ping 192.168.119.135
+84 bytes from 192.168.119.135 icmp_seq=1 ttl=62 time=45.661 ms
+84 bytes from 192.168.119.135 icmp_seq=2 ttl=62 time=60.562 ms
+84 bytes from 192.168.119.135 icmp_seq=3 ttl=62 time=61.839 ms
+
+=== 3. TEST DEPUIS ROUTEUR GNS3 ===
+R-B2#ping 192.168.119.135
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.119.135, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 28/40/56 ms

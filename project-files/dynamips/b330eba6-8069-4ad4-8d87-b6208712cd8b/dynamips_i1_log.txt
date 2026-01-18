@@ -1,0 +1,18 @@
+Jan 06 19:34:21.279 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 06 19:34:21.279 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63938.
+Jan 06 19:34:21.571 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 06 19:34:21.571 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips 
+Jan 06 19:34:21.576 GENERAL: working_dir=C:\Users\RR\GNS3\projects\CentOS_Bridge_v3\project-files\dynamips
+Jan 06 19:34:21.577 HYPERVISOR: exec_cmd: ethsw create Main-Switch-B1 
+Jan 06 19:34:37.759 HYPERVISOR: exec_cmd: nio create_udp udp-8c96f248-c354-4fb8-8cd6-e56355fe32fc 30032 127.0.0.1 30033 
+Jan 06 19:34:37.760 HYPERVISOR: exec_cmd: ethsw add_nio Main-Switch-B1 udp-8c96f248-c354-4fb8-8cd6-e56355fe32fc 
+Jan 06 19:34:37.778 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Main-Switch-B1 udp-8c96f248-c354-4fb8-8cd6-e56355fe32fc 1 
+Jan 06 19:34:37.848 HYPERVISOR: exec_cmd: nio create_udp udp-ddf1159e-124c-4e72-b93c-5b04cbe6c7c4 30036 127.0.0.1 30037 
+Jan 06 19:34:37.848 HYPERVISOR: exec_cmd: ethsw add_nio Main-Switch-B1 udp-ddf1159e-124c-4e72-b93c-5b04cbe6c7c4 
+Jan 06 19:34:37.871 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Main-Switch-B1 udp-ddf1159e-124c-4e72-b93c-5b04cbe6c7c4 1 
+Jan 06 19:34:37.983 HYPERVISOR: exec_cmd: nio create_udp udp-56bd1dac-b460-4dc6-abb3-6175870780e0 30039 127.0.0.1 30038 
+Jan 06 19:34:37.983 HYPERVISOR: exec_cmd: ethsw add_nio Main-Switch-B1 udp-56bd1dac-b460-4dc6-abb3-6175870780e0 
+Jan 06 19:34:37.997 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Main-Switch-B1 udp-56bd1dac-b460-4dc6-abb3-6175870780e0 1 
+Jan 06 19:34:38.055 HYPERVISOR: exec_cmd: nio create_udp udp-f2dc958c-ab3e-405e-83c1-f073c8e6bbd9 30040 127.0.0.1 30041 
+Jan 06 19:34:38.056 HYPERVISOR: exec_cmd: ethsw add_nio Main-Switch-B1 udp-f2dc958c-ab3e-405e-83c1-f073c8e6bbd9 
+Jan 06 19:34:38.059 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Main-Switch-B1 udp-f2dc958c-ab3e-405e-83c1-f073c8e6bbd9 1 

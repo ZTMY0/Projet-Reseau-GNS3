@@ -1,0 +1,104 @@
+=== CONFIGURATION DHCP BÂTIMENT 1 (R-B1) ===
+R-B1#show run | section dhcp
+ip dhcp pool B1_VLAN10
+ network 10.1.10.0 255.255.255.0
+ default-router 10.1.10.1
+ dns-server 192.168.119.135
+ip dhcp pool B1_VLAN20
+ network 10.1.20.0 255.255.255.0
+ default-router 10.1.20.1
+ dns-server 192.168.119.135
+ip dhcp pool B1_VOIP
+ network 10.1.30.0 255.255.255.0
+ default-router 10.1.30.1
+ dns-server 192.168.119.135
+ip dhcp pool B1_MANAGEMENT
+ network 10.1.99.0 255.255.255.0
+ default-router 10.1.99.1
+ dns-server 10.100.0.10
+ip dhcp pool B1_SERVERS
+ network 10.1.50.0 255.255.255.0
+ default-router 10.1.50.1
+ dns-server 192.168.119.135
+
+
+=== CONFIGURATION DHCP BÂTIMENT 2 (R-B2) ===
+R-B2#show run | section dhcp
+ip dhcp pool VLAN_DIR
+ network 10.2.10.0 255.255.255.0
+ default-router 10.2.10.254
+ dns-server 192.168.119.135
+ip dhcp pool VLAN_IT
+ network 10.2.15.0 255.255.255.0
+ default-router 10.2.15.254
+ dns-server 192.168.119.135
+ip dhcp pool VLAN_EIDIA
+ network 10.2.100.0 255.255.255.0
+ default-router 10.2.100.254
+ dns-server 192.168.119.135
+ip dhcp pool B2_VLAN10
+ default-router 10.2.10.1
+ dns-server 10.100.0.10
+ip dhcp pool B2_VLAN20
+ network 10.2.20.0 255.255.255.0
+ default-router 10.2.20.1
+ dns-server 192.168.119.135
+ip dhcp pool B2_VOIP
+ network 10.2.30.0 255.255.255.0
+ default-router 10.2.30.1
+ dns-server 192.168.119.135
+ip dhcp pool B2_MANAGEMENT
+ network 10.2.99.0 255.255.255.0
+ default-router 10.2.99.1
+ dns-server 10.100.0.10
+ip dhcp pool B2_SERVERS
+ network 10.2.50.0 255.255.255.0
+ default-router 10.2.50.1
+ dns-server 192.168.119.135
+
+=== CONFIGURATION DHCP BÂTIMENT 3 (R-B3) ===
+R-B3#show run | section dhcp
+ip dhcp pool B3_VLAN10
+ network 10.3.10.0 255.255.255.0
+ default-router 10.3.10.1
+ dns-server 192.168.119.135
+ip dhcp pool B3_VLAN20
+ network 10.3.20.0 255.255.255.0
+ default-router 10.3.20.1
+ dns-server 192.168.119.135
+ip dhcp pool B3_VOIP
+ network 10.3.30.0 255.255.255.0
+ default-router 10.3.30.1
+ dns-server 192.168.119.135
+ip dhcp pool B3_MANAGEMENT
+ network 10.3.99.0 255.255.255.0
+ default-router 10.3.99.1
+ dns-server 10.100.0.10
+ip dhcp pool B3_SERVERS
+ network 10.3.50.0 255.255.255.0
+ default-router 10.3.50.1
+ dns-server 192.168.119.135
+
+
+=== CONFIGURATION DHCP BÂTIMENT 4 (R-B4) ===
+R-B4#show run | section dhcp
+ip dhcp pool B4_VLAN10
+ network 10.4.10.0 255.255.255.0
+ default-router 10.4.10.1
+ dns-server 192.168.119.135
+ip dhcp pool B4_VLAN20
+ network 10.4.20.0 255.255.255.0
+ default-router 10.4.20.1
+ dns-server 192.168.119.135
+ip dhcp pool B4_VOIP
+ network 10.4.30.0 255.255.255.0
+ default-router 10.4.30.1
+ dns-server 192.168.119.135
+ip dhcp pool B4_MANAGEMENT
+ network 10.4.99.0 255.255.255.0
+ default-router 10.4.99.1
+ dns-server 10.100.0.10
+ip dhcp pool B4_SERVERS
+ network 10.4.50.0 255.255.255.0
+ default-router 10.4.50.1
+ dns-server 10.100.0.10
